@@ -1,5 +1,26 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About the project
+
+This is a clone of the site - https://nextquest.nl/en/services-and-courses/boat-tour-international-bar/
+
+## About the project
+
+Tools used: 
+1. Nextjs
+2. Tailwind css and components - I chose tailwind css and used the existing components readily available from their site
+3. I have used the font - Lexend deca from google fonts. ( This is the exact same font used on the nextquest webpage)
+4. Although i could divide the entire webpage into different components - i only chose to differentiate the form and footer component from the others.
+5. I did want to use internationalization in order to allow the users to select two languages (as available on the original site - due to time constraints i decided not to go with this for now)
+6. I have also ensured the entire site is mobile friendly and responsive for devices with different resolutions.
+7. I chose netlify as a platform of choice to deploy the application.
+
+   
+Live URL: https://nextquestdemo.netlify.app/
+
+
+
+
 ## Getting Started
 
 First, run the development server:
