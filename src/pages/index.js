@@ -3,11 +3,10 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Lexend_Deca } from "@next/font/google";
 import Form from "./Form";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 const lexend_deca = Lexend_Deca({
   subsets: ["latin"],
- 
 });
 
 const navigation = [
@@ -23,57 +22,47 @@ const navigation = [
 
 const activities = [
   {
-    name: 'Duration',
-    time: '1 hrs 30 min',
-    imageUrl:
-      'https://cdn-icons-png.flaticon.com/512/4305/4305432.png',
+    name: "Duration",
+    time: "1 hrs 30 min",
+    imageUrl: "https://cdn-icons-png.flaticon.com/512/4305/4305432.png",
   },
   {
-    name: 'Team Size',
-    time: 'Min 10 Max 40',
-    imageUrl:
-      'https://cdn-icons-png.flaticon.com/512/5238/5238538.png',
+    name: "Team Size",
+    time: "Min 10 Max 40",
+    imageUrl: "https://cdn-icons-png.flaticon.com/512/5238/5238538.png",
   },
   {
-    name: 'Language',
-    time: 'English, Dutch',
-    imageUrl:
-      'https://cdn-icons-png.flaticon.com/512/3898/3898082.png',
+    name: "Language",
+    time: "English, Dutch",
+    imageUrl: "https://cdn-icons-png.flaticon.com/512/3898/3898082.png",
   },
   {
-    name: 'Activity option',
-    time: 'Outside the office',
-    imageUrl:
-      'https://cdn-icons-png.flaticon.com/512/2622/2622224.png',
+    name: "Activity option",
+    time: "Outside the office",
+    imageUrl: "https://cdn-icons-png.flaticon.com/512/2622/2622224.png",
   },
   {
-    name: 'Goals',
-    time: 'Inspiration, Creativity, Mental & physical wellbeing, gratitude',
-    imageUrl:
-      'https://cdn-icons-png.flaticon.com/512/1211/1211795.png',
+    name: "Goals",
+    time: "Inspiration, Creativity, Mental & physical wellbeing, gratitude",
+    imageUrl: "https://cdn-icons-png.flaticon.com/512/1211/1211795.png",
   },
- 
- 
-]
+];
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Dutch bar",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
- 
+      "we offer Drink package: Dutch bar (beer/wine/soda’s) + 1 bottle of spirit pers 10 people",
   },
   {
-    name: "SSL certificates.",
+    name: "Open boat + skipper",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    
+      "Feel the breeze in the air while enjoying beautiful UNESCO scenaries",
   },
   {
-    name: "Database backups.",
+    name: "Private closed boat + skipper",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-
+      "Looking to explore the Zaan area on your own? This might be the perfect opportunity for you",
   },
 ];
 
@@ -96,7 +85,6 @@ export default function Example() {
                   alt=""
                 />
               </a>
-              
             </div>
             <div className="flex lg:hidden">
               <button
@@ -192,7 +180,10 @@ export default function Example() {
               >
                 Boat Tour-Extended Dutch Bar
               </h1>
-              <p className="mt-6 text-lg leading-8 text-white-600" style={{fontWeight:'700',fontSize:'26px'}}>
+              <p
+                className="mt-6 text-lg leading-8 text-white-600"
+                style={{ fontWeight: "700", fontSize: "26px" }}
+              >
                 From €45 / person
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -248,7 +239,6 @@ export default function Example() {
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
                       <dt className="inline font-semibold text-gray-900">
-                       
                         {feature.name}
                       </dt>{" "}
                       <dd className="inline">{feature.description}</dd>
@@ -269,8 +259,8 @@ export default function Example() {
           </div>
         </div>
       </div>
-   {/* feature sub */}
-   <div className="overflow-hidden bg-white py-3 sm:py-3">
+      {/* feature sub */}
+      <div className="overflow-hidden bg-white py-3 sm:py-3">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
@@ -291,10 +281,11 @@ export default function Example() {
                   className="mt-6 text-sm leading-6 text-gray-600"
                   style={{ fontWeight: "400", fontSize: "15px" }}
                 >
-                  Embark on a delightful Amsterdam city canal cruise. To cruise the Amsterdam canal is the ultimate teambuilding activity. NextQuest offers
-                  the best Amsterdam boat adventures, fostering team bonds and enjoying a fantastic time together!
+                  Embark on a delightful Amsterdam city canal cruise. To cruise
+                  the Amsterdam canal is the ultimate teambuilding activity.
+                  NextQuest offers the best Amsterdam boat adventures, fostering
+                  team bonds and enjoying a fantastic time together!
                 </div>
-               
               </div>
             </div>
           </div>
@@ -302,130 +293,147 @@ export default function Example() {
       </div>
       {/* activities */}
       <div className="bg-white py-2 sm:py-3">
-      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-        <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-          {activities.map((activity) => (
-            <li key={activity.name}>
-              <div className="flex items-center gap-x-6">
-                <img className="h-16 w-16 rounded-full" src={activity.imageUrl} alt="" />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{activity.name}</h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">{activity.time}</p>
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <ul
+            role="list"
+            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            {activities.map((activity) => (
+              <li key={activity.name}>
+                <div className="flex items-center gap-x-6">
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    src={activity.imageUrl}
+                    alt=""
+                  />
+                  <div>
+                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                      {activity.name}
+                    </h3>
+                    <p className="text-sm font-semibold leading-6 text-indigo-600">
+                      {activity.time}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-    {/* CTA know more */}
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden  px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
-        style={{backgroundColor:"#ff5c3a"}}>
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Want to know more?
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-white-300">
-            Let us know and we will customize the experience specifically
-            for your Team needs!
-            </p>
-      
-            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                style={{fontWeight:'400',fontSize:'16px',color:'#ff5c3a'}}
-              >
-                Get A Quick Quote
-              </a>
+      {/* CTA know more */}
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div
+            className="relative isolate overflow-hidden  px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+            style={{ backgroundColor: "#ff5c3a" }}
+          >
+            <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Want to know more?
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-white-300">
+                Let us know and we will customize the experience specifically
+                for your Team needs!
+              </p>
+
+              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                <a
+                  href="#"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  style={{
+                    fontWeight: "400",
+                    fontSize: "16px",
+                    color: "#ff5c3a",
+                  }}
+                >
+                  Get A Quick Quote
+                </a>
+              </div>
             </div>
-           
+            <div className="relative mt-16 h-80 lg:mt-8">
+              <img
+                className="absolute left-0 top-0 w-[35rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                src="https://media.istockphoto.com/id/1434742171/photo/laptop-ppt-presentation-business-meeting-and-team-working-on-review-for-new-digital-website.webp?b=1&s=170667a&w=0&k=20&c=CTuv0GsOQhhXBx7nhCghIaadrbJS9bpTdIn7zHi8xOo="
+                alt="App screenshot"
+                width={1824}
+                height={1080}
+              />
+            </div>
           </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
+        </div>
+      </div>
+      {/* Companies */}
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h1
+            className="text-center text-lg font-semibold leading-8 text-gray-900"
+            style={{ fontWeight: "700", fontSize: "26px" }}
+          >
+            Trusted by the world’s most innovative teams
+          </h1>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             <img
-              className="absolute left-0 top-0 w-[35rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://media.istockphoto.com/id/1434742171/photo/laptop-ppt-presentation-business-meeting-and-team-working-on-review-for-new-digital-website.webp?b=1&s=170667a&w=0&k=20&c=CTuv0GsOQhhXBx7nhCghIaadrbJS9bpTdIn7zHi8xOo="
-              alt="App screenshot"
-              width={1824}
-              height={1080}
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+              alt="Transistor"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+              alt="Reform"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+              alt="Tuple"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+              alt="SavvyCal"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+              alt="Statamic"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+              alt="Statamic"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+              alt="Statamic"
+              width={158}
+              height={48}
+            />
+            <img
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+              alt="Transistor"
+              width={158}
+              height={48}
             />
           </div>
         </div>
       </div>
-    </div>
-    {/* Companies */}
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h1 className="text-center text-lg font-semibold leading-8 text-gray-900"
-        style={{fontWeight:'700',fontSize:'26px'}}>
-          Trusted by the world’s most innovative teams
-        </h1>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-            alt="Transistor"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-            alt="Reform"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-            alt="Tuple"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-            alt="SavvyCal"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
-           <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
-           <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-            alt="Transistor"
-            width={158}
-            height={48}
-          />
-        </div>
-      </div>
-    </div>
-    {/* Form component */}
-    <Form />
-    <Footer />
-      
+      {/* Form component */}
+      <Form />
+      <Footer />
     </main>
   );
 }
